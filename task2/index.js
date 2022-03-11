@@ -1,4 +1,5 @@
-a var users = {
+var users = {
+    // ozgaruvchilar
     "Akmal": {
         name: "Akmal",
         surname: "O'ktamov",
@@ -19,33 +20,36 @@ a var users = {
         age: 21,
         salary: 400
    }
+//    ozgaruvchilar
 
 }
 
+function samSalary(users) {
+
+    var akmalSalary = users.Akmal.salary
+    var uybeksalary = users.Oybek.salary
+    var umidSalary = users.Umid.salary
+
+      var allUsersSalery  =  (akmalSalary + uybeksalary + umidSalary)
+
+ //     console.log(akmalSalary, uybeksalary, umidSalaru, allUsersSelery);
+
+       return allUsersSalery //Bu yerga userlarni o'rtasha yoshini chiqarasiz
+ }
+
+
+
 function sumage(users) {
-    //Bu yerga oyliklarni yig'indisini jo'natasiz
+    
    var allAge =  ( users.Akmal.age  +  users.Oybek.age + users.Umid.age) / 3
-   // console.log(akmalage , Oybekage, umdAge , allAge );
 
     return allAge
 }
 
  console.log( sumage(users));
 
-//sasdasdasd
 
- function samSalary(users) {
-
-      var akmalSalary = users.Akmal.salary
-      var uybeksalary = users.Oybek.salary
-      var umidSalary = users.Umid.salary
-
-        var allUsersSalery  =  (akmalSalary + uybeksalary + umidSalary)
-
-   //     console.log(akmalSalary, uybeksalary, umidSalaru, allUsersSelery);
-
-         return allUsersSalery //Bu yerga userlarni o'rtasha yoshini chiqarasiz
-   }
+ 
         console.log(samSalary(users));
 
 
